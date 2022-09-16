@@ -1,0 +1,13 @@
+apiVersion: meta.pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: crossplane-aws-blueprints-s3
+  annotations: 
+    meta.crossplane.io/source: https://github.com/aws-samples/crossplane-aws-blueprints
+    meta.crossplane.io/license: MIT-0
+spec:
+  crossplane:
+    version: v1.9.1
+  dependsOn:
+  - provider: crossplane/provider-aws
+    version: v0.31.0
